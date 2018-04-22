@@ -1,0 +1,278 @@
+@charset "utf-8";
+/*
+ * 初始化样式
+ * css reset
+ */
+html {overflow-y:scroll;} 
+body {margin:0; padding:0;font-size:14px;font-family: "RobotoSlab-Regular","Hiragino Sans GB",sans-serif; color: #666;} 
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0; padding:0;} 
+table,td,tr,th {font-size:14px;} 
+li {list-style:none;}
+a { text-decoration:none;}
+img{vertical-align:top;border:0;} 
+ol,ul {list-style:none;} 
+h1,h2,h3,h4,h5,h6 {font-size:14px; font-weight:normal;} 
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+
+/*
+ * 导入自定义字体
+ */
+@font-face {
+	font-family: RobotoSlab-Regular; /*名字自定义,一般与字体名称一样*/
+	src: url('../IconFont/RobotoSlab-Regular.ttf');
+}
+@font-face {
+	font-family: Hiragino Sans GB; /*名字自定义,一般与字体名称一样*/
+	src: url('../IconFont/Hiragino Sans GB.ttf');
+}
+
+.clearfix:after {content: ""; display: block; height:0; line-height: 0; clear:both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.wrap{margin-right: auto;margin-left: auto;position: relative;}
+
+@media screen and (min-width:480px){
+	.wrap{
+		width: auto;
+	}
+}
+
+@media screen and (min-width:768px){
+	.wrap{
+		width: 750px;
+	}
+}
+
+@media screen and (min-width:992px){
+	.wrap{
+		width: 970px;
+	}
+}
+	
+@media screen and (min-width:1200px){
+	.wrap{
+		width: 1170px;
+		padding: 0 15px;
+	}
+}
+
+
+
+
+/*
+ * 页面布局框架--顶部
+ */
+body{
+	background: url(../img/bg.png) no-repeat top 60px center #dcc7c7;/*#f6f6f6  #efefef*/
+	/*background-size: contain;*/
+	background-attachment: fixed;
+	position: relative;
+}
+
+/*顶部*/
+.top{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #fff;
+	overflow: hidden;
+}
+/*登录按钮*/
+.top .login{
+	width: 100px;
+	height: 30px;
+	padding: 0 20px;
+}
+
+/*关注列表、搜索*/
+.top .top-lists{
+	width: 1000px;
+	height: 30px;
+	padding: 0 15px;
+	text-align: right;
+}
+
+/*关注列表*/
+.top .top-lists .icon-lists{
+	height: 30px;
+	display: inline-block;
+}
+
+/*搜索*/
+.top .top-lists .search{
+	height: 30px;
+	display: inline-block;
+}
+
+/*
+ * 页面布局框架--头部
+ */
+.header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	background-color: #000;
+	overflow: hidden;
+	box-shadow: 0px 2px 5px #2f2f2f;
+    position: relative;
+    z-index: 5;
+}
+
+/*LOGO*/
+.header .logo{
+	width: 200px;
+	height: 50px;
+	padding: 0 0 0 15px;
+}
+
+/*导航菜单*/
+.header .nav{
+	width: 925px;
+	height: 50px;
+	padding: 0 15px;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+
+/*
+ * 页面布局框架--主体
+ */
+.main{
+	width: 1120px;
+	padding: 40px;
+	padding-bottom: 200px;
+	background: rgba(255, 255, 255, .5);
+	margin: 0 auto;
+}
+
+/*内容*/
+.main .content{
+	width: 770px;
+	margin-right: 350px;
+	margin-bottom: 40px;
+}
+
+/*banner图*/
+.main .content .banner{
+	width: 770px;
+	height: 300px;
+	margin-bottom: 20px;	
+	overflow: hidden;
+	position: relative;
+}
+
+.main .content .banner .slider-item{
+	
+	height: 300px;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+/*左侧文章列表*/
+.main .content .left-ar{
+	overflow: hidden;
+	padding-bottom: 40px;
+	background-color: #fff;
+}
+
+/*侧边栏*/
+.main .sidebar{
+	width: 340px;
+	margin-left: -360px;
+}
+
+/*选项卡*/
+.main .sidebar .tabs{
+	height: 198px;
+	background-color: #E9E9E9;
+	border: 1px solid #EAEAEA;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+/*关于我*/
+.main .sidebar .about-me{
+	margin-bottom: 20px;
+	background-color: #999;
+}
+
+/*每日一句*/
+.main .sidebar .calendar-phrases{
+	/*height: 100px;*/
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/*站内搜索*/
+.main .sidebar .search-box{
+	height: 100px;
+	color: #aaa;
+	background-color: #fff;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+/*随机文章*/
+.main .sidebar .random-articles{
+	margin-bottom: 20px;
+	background-color: #FFECEC;
+}
+
+/*友情链接*/
+.main .sidebar .friendly-link{
+	background-color: #fff;
+}
+
+/*遮罩层*/
+.mask{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	z-index: 20;
+}
+
+/*登录界面*/
+.login-form{
+	display: none;
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	/*margin-left: -150px;
+	margin-top: -100px;*/
+	background-color: #ffffff;
+	border-radius: 8px;
+	text-align: center;
+	border: 1px solid #ece6e6;
+	z-index: 21;
+}
+
+/*搜索页面*/
+.search-page{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	text-align: center;
+}
+
+/*脚部*/
+.footer{
+	width: 100%;
+	background-color: #000;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" ;content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<meta name="keywords" content="HTML,css,JavaScript,jQuery,前端开发,前端自学,前端作品" />
+	    <meta name="description" content="关注前端技术、分享和学习的个人博客网站" />
+		<title>$("#WEI").BLOG</title>
+		<link rel="Shortcut Icon" href="网站.ico图标路径" />
+		<link rel="stylesheet" href="IconFont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>				
+		<!--顶部-->
+		<div class="top">
+			<!--页面容器-->
+			<div class="wrap clearfix">
+				
+				<!--登录按钮-->
+				<div class="login fl">
+					<a href="#" id="back-end">Hi,请登录</a>
+				</div>
+				
+				<!--关注列表、搜索-->
+				<div class="top-lists fr">
+					<!--关注列表-->
+					<div class="icon-lists">
+						<ul>
+							<li><a href="https://github.com/CAI-JIAWEI-GitHub/blogDemo.git"><span class="iconfont icon-github"></span>GitHub</a></li>
+							<li><a href="javascript:;"><span class="iconfont icon-weixin"></span>WeChat</a></li>
+							<li>
+								<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1611630287">
+								<span class="iconfont icon-qq"></span>QQ
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<!--搜索-->
+					<div class="search">
+						<span class="iconfont icon-sousuo"></span>
+					</div>
+				</div>
+					
+			</div>
+			
+		</div>
+		
+		<!--头部-->
+		<header class="header">
+			<!--页面容器-->
+			<div class="wrap clearfix">
+				
+				<!--LOGO-->
+				<div class="logo fl">
+					<h1>
+						<a href="#">$("#WEI").BLOG</a>
+					</h1>	
+				</div>
+				
+				<!--导航菜单-->
+				<nav class="nav fr">
+					<ul class="clearfix">
+						<li><a href="#">主页</a></li>
+						<li><a href="#">WEB前端</a></li>
+						<li><a href="#">后端技术</a></li>
+						<li><a href="#">作品案例</a></li>
+						<li><a href="#">心情随笔</a></li>
+						<li><a href="#">休闲生活</a></li>
+						<li><a href="#">我的简历</a></li>
+						<li><a href="#">留言簿</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+			
+		</header>
+
+		<!--主体-->
+		<article class="main clearfix">
+			<!--内容-->
+			<div class="content fl">
+				
+				<!--banner图-->
+				<div class="banner">
+					
+					<!--幻灯片-->
+					<div class="slider-item">
+						<img src="img/banner01.jpg" alt="幻灯片" class="slider"/>
+						<img src="img/banner02.jpg" alt="幻灯片" class="slider"/>
+						<img src="img/banner03.jpg" alt="幻灯片" class="slider"/>
+					</div>
+					
+					<!--左右点击切换-->
+					<a href="javascript:;" class="slider-btn prve"></a>
+					<a href="javascript:;" class="slider-btn next"></a>
+					
+					<!--圆点导航-->
+					<div class="dots" id="dots">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+					</div>
+					
+				</div>
+				
+				<!--左侧文章列表-->
+				<div class="left-ar">
+					
+					<h2 class="caption">最新文章</h2>
+					
+					<!--最新文章列表-->
+					<section class="new-ar clearfix">
+						<h3 class="news-caption">标题</h3>
+						<div class="news-pic fl">
+							<img src="img/t02.jpg" alt="文章缩略图"/>
+						</div>
+						<div class="news-content clearfix">
+							<p>内容</p>
+						</div>
+						<div class="author">
+							<span class="iconfont icon-biaoqian">标签</span>				
+							<span class="iconfont icon-shijian">2018-1-5</span>
+							<a href="#" class="read fr">阅读原文&gt;&gt;</a>
+						</div>						
+					</section>
+					
+					<!--最新文章列表-->
+					<section class="new-ar clearfix">
+						<h3 class="news-caption">标题</h3>
+						<div class="news-pic fl">
+							<img src="img/t02.jpg" alt="文章缩略图"/>
+						</div>
+						<div class="news-content clearfix">
+							<p>内容</p>
+						</div>
+						<div class="author">
+							<span class="iconfont icon-biaoqian">标签</span>				
+							<span class="iconfont icon-shijian">2018-1-5</span>
+							<a href="#" class="read fr">阅读原文&gt;&gt;</a>
+						</div>						
+					</section>
+					
+					<!--最新文章列表-->
+					<section class="new-ar clearfix">
+						<h3 class="news-caption">标题</h3>
+						<div class="news-pic fl">
+							<img src="img/t02.jpg" alt="文章缩略图"/>
+						</div>
+						<div class="news-content clearfix">
+							<p>内容</p>
+						</div>
+						<div class="author">
+							<span class="iconfont icon-biaoqian">标签</span>				
+							<span class="iconfont icon-shijian">2018-1-5</span>
+							<a href="#" class="read fr">阅读原文&gt;&gt;</a>
+						</div>						
+					</section>
+					
+				</div>	
+								
+			</div>		
+			
+			<!--侧边栏-->
+			<div class="sidebar fr">
+					
+				<!--选项卡-->
+				<div class="tabs">
+					<!--选项卡项-->
+					<div class="tabs-item">
+						<ul class="clearfix">
+							<li><a href="#">网站公告</a></li>
+							<li><a href="#">博客信息</a></li>
+						</ul>
+					</div>
+					<!--选项卡内容盒子-->
+					<div class="tabs-box">内容1</div>
+					<div class="tabs-box">内容2</div>
+					
+				</div>
+					
+				<!--关于我-->
+				<div class="about-me">
+					
+					<h2 class="caption">关于我</h2>
+					<div class="me">
+						<h3>$("#WEI").BLOG</h3>
+						<ul>
+							<li><strong>职业：</strong>前端开发</li>
+							<li><strong>专业：</strong>计算机应用技术（网络）</li>
+							<li><strong>微信：</strong>JW_DMXYHZ</li>
+							<li><strong>邮箱：</strong>1611630287@qq.com</li>
+						</ul>
+					</div>
+					
+				</div>
+		
+				<!--每日一句-->
+				<div class="calendar-phrases">
+					
+					<h2 class="caption">每日一句</h2>
+					<div class="cp-content">
+						<h3>2018年4月22日星期日</h3>
+						<p>脚下路， 已走出， 不回头</p>
+					</div>
+					
+				</div>
+				
+				<!--站内搜索-->
+				<div class="search-box">
+					
+					<h2 class="caption">站内搜索</h2>
+					<a href="javascript:;">Search</a>
+					<input type="search" name="search" id="search" value="" placeholder="Search"/>
+					
+				</div>
+		
+				<!--随机文章-->
+				<div class="random-articles">
+					
+					<h2 class="caption">随机文章</h2>
+					<div class="random-item">
+						<ul>
+							<li><a href="#">随机文章1</a></li>
+							<li><a href="#">随机文章2</a></li>
+							<li><a href="#">随机文章3</a></li>
+						</ul>
+					</div>
+					
+				</div>
+							
+				<!--友情链接-->
+				<div class="friendly-link">
+					<h2 class="caption">友情链接</h2>
+					<div class="links">
+						<a href="#">链接1</a>
+						<a href="#">链接2</a>
+						<a href="#">链接3</a>
+						<a href="#">链接1</a>
+						<a href="#">链接2</a>
+						<a href="#">链接3</a>
+					</div>
+				</div>
+							
+			</div>
+			
+		</article>
+		
+		<!--遮罩层-->
+		<div class="mask" id="mask"></div>
+							
+		<!--登录界面-->
+		<div class="login-form" id="loginForm">
+			
+			<form action="javascript:;" method="post">
+				<div class="form-caption">
+					<h2>登录$("#WEI").BLOG后台</h2>
+				</div>
+				<label for="user">账号：</label>
+				<input type="text" name="user" id="user" placeholder="请输入账号"/><br />
+				
+				<label for="ps">密码：</label>
+				<input type="password" name="ps" id="ps" placeholder="请输入密码"/><br />
+				
+				<button type="submit" class="form-btn" id="closeForm">取消</button>
+				<button type="button" class="form-btn">登录</button>
+				
+			</form>
+			
+		</div>
+		
+		<!--搜索界面-->
+		<div class="search-page">
+			<span class="iconfont icon-guanbi close"></span>
+			<input type="search" name="bSearch" id="bSearch" value="" placeholder="Search"/>
+			<a href="javascript:;">Search</a>
+		</div>
+		
+		<!--评论区-->
+		
+		<!--脚部-->
+		<div class="footer fl">
+			<div class="wrap">
+				<div class="bottom-info">
+					<span>$("#WEI").BLOG © 2018</span>
+					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备17154450号</a></span>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

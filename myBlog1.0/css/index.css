@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+/*
+ * 顶部模块样式
+ */
+
+/*登录按钮*/
+.top .login #back-end{
+	display: inline-block;
+	font-size: 15px;
+	color: #999;
+	transition: .35s;
+}
+
+.top .login #back-end:hover{
+	font-size: 16px;
+	font-weight: bold;
+	transition: .35s;
+	color: #0086B3;
+}
+
+/*关注列表*/
+.top .top-lists .icon-lists ul li{
+	display: inline-block;
+	padding: 0 8px;
+	height: 30px;
+}
+
+.top .top-lists .icon-lists ul li a{
+	font-size: 15px;
+	color: #999;
+	transition: .35s;
+}
+
+.top .top-lists .icon-lists ul li a:hover{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	transition: .35s;
+	color: #0086B3;
+}
+
+/*搜索*/
+.top .top-lists .icon-lists .search{
+
+}
+
+/*
+ * 头部模块样式
+ */
+
+/*LOGO*/
+.header .logo h1{
+	height: 50px;
+	border: 0;
+}
+
+.header .logo h1 a{
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	transition: 1s;
+}
+
+.header .logo h1 a:hover{
+	font-size: 22px;
+	transform:rotate(360deg);
+	transition: 1s;
+}
+
+/*导航菜单*/
+.header .nav ul{
+	width: 925px;
+	height: 50px;
+	padding: 0 15px;
+	/*text-align: center;
+	/*margin: 0 auto;*/
+}
+
+.header .nav ul li{
+	float: left;
+	width: 100px;
+}
+
+.header .nav ul li a{
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	transition: .35s;
+}
+
+.header .nav ul li a:hover{
+	background-color: #737272;
+	transition: .35s;
+}
+
+/*导航选中*/
+.nav-active{
+	background-color: #737272;
+}
+
+/*
+ * 主体模块样式
+ */
+
+/*banner图*/
+.main .content .banner .slider-item .slider{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+/*左右切换*/
+.main .content .banner .slider-btn{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	top: 150px;
+	margin-top: -40px;
+	background: url(../img/arrow.png) no-repeat center center;
+}
+
+.main .content .banner .slider-btn:hover{
+	background-color: #333;
+}
+
+.prve{
+	transform: rotate(180deg);
+}
+.next{
+	left: auto;
+	right: 0;
+}
+
+/*圆点导航*/
+.main .content .banner .dots{
+	position: absolute;
+	left: 350px;
+	bottom: 24px;
+	text-align: center;
+}
+
+.main .content .banner .dots span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	border-radius: 50%;
+	margin-left: 8px;
+	background: rgba(7,17,27,.4);
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+	cursor: pointer;
+}
+
+ .main .content .banner.dots span.active{
+	box-shadow: 0 0 0 2px rgba(0,0,0,.4) inset;
+	background-color: #FEC009;
+}
+
+/*左侧文章列表*/
+.main .content .left-ar .caption{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	padding: 0 0 0 12px;
+	background-color: #000;
+}
+
+/*最新文章列表*/
+.main .content .left-ar .new-ar{
+	padding: 10px;
+	border-bottom: 2px solid #b9bfb8;
+}
+
+.main .content .left-ar .new-ar .news-caption{
+	font-size: 18px;
+	font-weight: bold;
+	color: #999;
+	padding: 5px 0;
+}
+
+.main .content .left-ar .new-ar .news-pic{
+	width: 30%;
+	height: 110px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.main .content .left-ar .new-ar .news-pic img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: 0;
+}
+
+.main .content .left-ar .new-ar .news-content{
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.7em;
+	color: #888;
+}
+
+.main .content .left-ar .new-ar .author{
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+
+.main .content .left-ar .new-ar .author span{
+	display: inline-block;
+	font-size: 13px;
+	padding-right: 18px;
+	float: left;
+}
+
+.main .content .left-ar .new-ar .author .read{
+	display: inline-block;
+	color: #999;
+	font-size: 13px;	
+	/*text-align: right;*/
+	transition: .35s;
+	padding-right: 20px;
+}
+
+.main .content .left-ar .new-ar .author .read:hover{
+	color: #0086B3;
+	transition: .35s;
+	font-size: 14px;
+}
+
+/*
+ * 侧边栏模块样式
+ */
+/*通用标题*/
+.caption{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+}
+
+.tabs-active{
+		
+}
+
+/*选项卡*/
+.main .sidebar .tabs .tabs-item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #000;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.main .sidebar .tabs .tabs-item ul li{
+	float: left;
+	display: block;
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid #EAEAEA;
+}
+
+.main .sidebar .tabs .tabs-item ul li a{
+	display: block;
+	color: #fff;
+	font-weight: bold;
+}
+
+.main .sidebar .tabs .tabs-item ul li a:hover{
+	background-color: #fff;
+	color: #999;
+	transition: 0.35;
+}
+
+.main .sidebar .tabs .tabs-box{
+	width: 100%;
+	height: 158px;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+/*关于我*/
+.main .sidebar .about-me .me{
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+}
+
+.main .sidebar .about-me .me h3{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+.main .sidebar .about-me .me ul{
+	width: 100%;
+	padding: 0 0 20px 100px;
+	text-align: center;
+}
+
+.main .sidebar .about-me .me li{
+	text-align: left;
+	line-height: 1.8em;
+}
+
+/*每日一句*/
+.main .sidebar .calendar-phrases .cp-content{
+	/*height: 100px;*/
+	background-color: #fff;
+	font-size: 12px;
+    color: #AAA;
+}
+
+.main .sidebar .calendar-phrases .cp-content h3{
+	color: #3399CC;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.main .sidebar .calendar-phrases .cp-content p{
+	padding: 5px 10px 10px 10px;
+	font-size: 16px;
+	color: #888;
+	font-weight: bold;
+}
+
+/*站内搜索*/
+.main .sidebar .search-box #search{
+	display: block;
+	margin: 10px 0 10px 35px;
+	padding: 8px 8px;
+	border: 1px solid #EAEAEA;
+	outline: none;
+}
+
+.main .sidebar .search-box a{
+	display: inline-block;
+	padding: 4px 10px;
+	background-color: #000;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	top: 50px;
+	right: 38px;
+}
+
+/*随机文章*/
+.main .sidebar .random-articles .random-item{
+	padding: 10px 10px 30px 10px;
+	background-color: #fff;
+}
+
+.main .sidebar .random-articles .random-item li{
+	line-height: 1.8em;
+	padding: 8px 0;
+	border-bottom: 1px dashed;
+}
+
+.main .sidebar .random-articles .random-item li a{
+	display: block;
+	color: #999;
+	transition: 0.35s;
+}
+
+.main .sidebar .random-articles .random-item li a:hover{
+	color: #0086B3;
+	transition: 0.35s;
+}
+
+/*友情链接*/
+.main .sidebar .friendly-link .links{
+	text-align: center;
+}
+
+.main .sidebar .friendly-link .links a{
+	display: inline-block;
+	padding: 15px 25px;
+	margin-right: 5px;
+	transition: 0.35s;
+}
+
+.main .sidebar .friendly-link .links a:hover{
+	font-size: 16px;
+	font-weight: bold;
+	transition: 0.35s;
+}
+
+/*登录界面*/
+.login-form .form-caption{
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 1px solid #E7E1CD;
+	margin-bottom: 20px;
+}
+
+.login-form .form-caption h2{
+	color: #3399CC;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.login-form label{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}
+
+.login-form input{
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #E7E1CD;
+	outline: none;
+	margin: 10px 0;
+}
+
+.login-form .form-btn{
+	width: 25%;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 30px;
+	border-radius: 5px;
+	border: 1px solid #E7E1CD;
+	cursor: pointer;
+	background-color: #0086B3;
+	color: #fff;
+	transition: 0.35s;
+	font-weight: bold;
+	outline: none;
+}
+
+.login-form .form-btn:hover{
+	background-color: #55A532;
+	transition: 0.35s;
+}
+
+/*搜索界面*/
+.search-page #bSearch{
+	display: inline-block;
+	width: 350px;
+	height: 40px;
+	padding: 0 0 0 10px;
+	border: 1px solid #000;
+	outline: none;
+	position: relative;
+	top: 150px;
+}
+
+.search-page a{
+	display: inline-block;
+	height: 40px;
+	background-color: #000;
+	color: #FFFDEF;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 8px;
+	line-height: 40px;
+	position: relative;
+	left: -5px;
+	top: 153px;
+}
+
+.search-page .close{
+	position: relative;
+	left: 500px;
+	top: 60px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #000;
+	transition: .35s;
+}
+
+.search-page .close:hover{
+	transition: .35s;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0086B3;
+}
+
+/*底部--版权、备案信息*/
+.footer .bottom-info{
+	text-align: center;
+	padding: 14px 0;
+	color: #fff;
+}
+
+.footer .bottom-info a{
+	color: #0195df;
+	transition: .5s;
+}
+
+.footer .bottom-info a:hover{
+	transition: .5s;
+	color: #FAFAFA;
+}
