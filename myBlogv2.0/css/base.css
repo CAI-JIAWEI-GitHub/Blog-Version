@@ -1,0 +1,152 @@
+@charset "utf-8";
+/*
+ * 初始化样式
+ * css reset
+ */
+html {overflow-y:scroll;} 
+body {margin:0; padding:0;font-size:14px;font-family: "RobotoSlab-Regular","Hiragino Sans GB",sans-serif; color: #666;} 
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{margin:0; padding:0;} 
+table,td,tr,th {font-size:14px;} 
+li {list-style:none;}
+a{text-decoration: none;}
+a:active,a:link,a:hover{text-decoration: none;}
+img{vertical-align:top;border:0;} 
+ol,ul {list-style:none;} 
+h1,h2,h3,h4,h5,h6 {font-size:14px; font-weight:normal;} 
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+
+/*
+ * 导入自定义字体
+ */
+@font-face {
+	font-family: RobotoSlab-Regular; /*名字自定义,一般与字体名称一样*/
+	src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+@font-face {
+	font-family: Hiragino Sans GB; /*名字自定义,一般与字体名称一样*/
+	src: url('../fonts/Hiragino Sans GB.ttf');
+}
+
+.clearfix:after {content: ""; display: block; height:0; line-height: 0; clear:both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+
+/*页面布局框架*/
+
+body{
+	background: url(../img/bg.png) no-repeat center top fixed;
+	background-color: #f1f1f1;
+}
+
+/*头部框架*/
+.header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #000;
+	position: fixed;
+	box-shadow: 0px 2px 5px #2f2f2f;
+	z-index: 99;
+	overflow: hidden;
+}
+
+/*LOGO*/
+.header .logo{
+	width: 200px;
+	height: 50px;
+	text-align: center;
+}
+
+
+/*PC端导航栏*/
+.header .nav{
+	width: 940px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+/*主体框架*/
+.main{
+	width: 100%;
+	min-height: 800px;
+}
+
+/*wrap*/
+.main .wrap{
+	width: 100%;
+	min-height: 800px;
+	padding: 50px 0;
+	background-color: rgba(255,255,255,.5);
+}
+
+/*内容*/
+.main .content{
+	width: 70%;
+	min-height: 800px;
+	padding: 20px 20px;
+}
+
+/*banner*/
+.main .content .banner{
+	width: 100%;
+	height: 250px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/*特别推荐*/
+.main .content .recommend{
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+/*最新文章*/
+.main .content .new-ar{
+	width: 100%;
+	min-height: 700px;
+	background-color: #fff;
+}
+
+/*侧边栏*/
+.main .sidebar{
+	width: 30%;
+	min-height: 800px;
+	padding: 20px 20px 20px 0;
+}
+
+/*选项卡*/
+.main .sidebar .tabs{
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #dcd6d6;
+	margin-bottom: 20px;
+}
+
+/*每日一句*/
+.main .sidebar .calendar-phrases{
+	width: 100%;
+	height: 130px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+/*随机文章*/
+.main .sidebar .random-ar{
+	width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+/*底部*/
+.footer{
+	width: 100%;
+	min-height: 50px;
+	background-color: #000;
+}

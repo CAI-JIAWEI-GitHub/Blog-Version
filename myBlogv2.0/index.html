@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" ;content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<meta name="keywords" content="HTML,css,JavaScript,jQuery,前端开发,前端自学" />
+	    <meta name="description" content="关注前端技术、分享和学习的个人博客网站" />
+		<title>$("#WEI").BLOG</title>
+		<link rel="Shortcut Icon" href="网站.ico图标路径" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+	</head>
+	<body>
+			
+		<!--头部-->
+		<header class="header">	
+			
+			<!--页面容器-->
+			<div class="container clearfix">
+			
+				<!--LOGO-->
+				<div class="logo fl">
+					<h1>
+						<a href="#">$("#WEI").BLOG</a>
+					</h1>
+				</div>
+					
+				<!--
+					移动端导航栏
+				<div class="m-nav">
+					
+					移动端导航栏LOGO
+					<div class="m-logo"></div>
+					
+				</div>
+				-->
+				
+				<!--PC端导航栏-->
+				<nav class="nav fl">
+					<ul>
+						<li><a href="#">主页</a></li>
+						<li><a href="#">WEB前端</a></li>
+						<li><a href="#">后端技术</a></li>
+						<li><a href="#">作品案例</a></li>
+						<li><a href="#">心情随笔</a></li>
+						<li><a href="#">休闲生活</a></li>
+						<li><a href="#">我的简历</a></li>
+						<li><a href="#">留言簿</a></li>
+					</ul>
+				</nav>
+			
+			</div>
+		</header>
+		
+		<!--主体-->
+		<div class="main">
+			
+			<!--页面容器-->
+			<div class="container">
+				
+				<!--wrap-->
+				<article class="wrap clearfix">
+					
+					<!--内容-->
+					<section class="content fl">
+						
+						<!--banner-->
+						<div class="banner">
+							<!--幻灯片-->
+							<div class="slider">
+								<img src="img/banner01.jpg" alt="" class="slider-item slider-show"/>
+								<img src="img/banner02.jpg" alt="" class="slider-item"/>
+								<img src="img/banner03.jpg" alt="" class="slider-item"/>							
+							</div>
+							
+							<!--切换控制-->
+							<a href="javascript:;" class="controls prev"></a>
+							<a href="javascript:;" class="controls next"></a>
+							
+							<!--圆点切换-->
+							<div class="dots">
+								<span class="dots-active"></span>
+								<span></span>
+								<span></span>
+							</div>
+							
+						</div>
+						
+						<!--特别推荐-->
+						<div class="recommend">
+							<h2 class="caption">特别推荐</h2>
+							<ul class="clearfix">
+								<li>
+									<div class="pic">
+										<img src="img/t01.jpg"/>
+									</div>
+									<h3>标题</h3>
+									<p>这是描述</p>
+									<a href="#"  class="read">阅读全文</a>
+								</li>
+							</ul>
+						</div>
+						
+						<!--最新文章-->
+						<div class="new-ar">
+							<h2 class="caption">最新文章</h2>
+							<ul>
+								<!--文章列表-->
+								<li>
+									<h3 class="ar-caption">标题</h3>
+									<div class="ar-pic">
+										<a href="#" title="标题"><img src="img/t01.jpg"/></a>
+										<p>文本</p>
+									</div>
+									<div class="ar-info">
+										<a href="#" class="tags">标签</a>
+										<span>2018-1-5</span>
+										<a href="#" class="read">阅读全文</a>
+									</div>
+								</li>
+								
+							</ul>
+							
+						</div>
+						
+					</section>
+					
+					<!--侧边栏-->
+					<aside class="sidebar fl">
+						
+						<!--选项卡-->
+						<div class="tabs">
+							<ul>
+								<li>关于我</li>
+								<li>网站公告</li>
+							</ul>
+							<!--关于我-->
+							<div class="about-me">
+								<h3>$("#WEI").BLOG</h3>
+								<div class="me">
+									<dl>
+										<dd><strong>职业：</strong>前端开发</dd>
+										<dd><strong>专业：</strong>计算机应用技术（网络）</dd>
+										<dd><strong>微信：</strong>JW_DMXYHZ</dd>
+										<dd><strong>邮箱：</strong>1611630287@qq.com</dd>
+									</dl>
+								</div>
+								<!--微信、QQ、GitHub字体图标-->
+								<div class="icon">
+									<ul class="clearfix">
+										<li><a href="#"><span class="iconfont icon-github"></span>GitHub</a></li>	
+										<li><a href="#"><span class="iconfont icon-qq"></span>QQ</a></li>
+										<li><a href="#"><span class="iconfont icon-weixin"></span>WeChat</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+						
+						<!--每日一句-->
+						<div class="calendar-phrases">
+							<h2 class="caption">每日一句</h2>
+							<h3>2018年4月23日星期一</h3>
+							<p>脚下路， 已走出， 不回头</p>
+						</div>
+						
+						<!--随机文章-->
+						<div class="random-ar">
+							<h2 class="caption">随机文章</h2>
+							<ul>
+								<li><a href="#">文章1</a></li>
+								<li><a href="#">文章2</a></li>
+							</ul>
+						</div>
+						
+						
+						
+					</aside>
+					
+				</article>
+				
+			</div>
+			
+		</div>
+		
+		<!--底部-->
+		<footer class="footer">
+			
+			<!--页面容器-->
+			<div class="container">
+				
+				<div class="bottom-info">
+					<span>$("#WEI").BLOG © 2018</span>
+					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备17154450号</a></span>
+				</div>
+				
+			</div>
+			
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,438 @@
+/*全局样式-标题*/
+.caption{
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 2px solid #000;	
+}
+
+/*全局样式-阅读全文*/
+.read{
+	display: inline-block;
+	padding: 10px 0;
+    color: #096;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .35s;
+}
+
+.read:hover{
+	transform: scale(1.1);
+	transition: .35s;
+}
+
+/*头部模块样式*/
+
+/*LOGO*/
+.header .logo a{
+	display: block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	transition: .35s;
+}
+
+.header .logo a:hover{
+	transform: scale(1.2);  /*CSS3属性使元素放大1.2倍*/
+	transition: .35s;
+}
+
+/*PC端导航栏*/
+.header .nav ul{
+	width: 940px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.header .nav >ul li{
+	float: left;
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.header .nav >ul >li a{
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	transition: .35s;
+} 
+
+.header .nav >ul >li a:hover{
+	background-color: #868686;
+	transition: .35s;
+}
+
+/*主体模块*/
+
+/*banner*/
+.main .content .banner .slider{
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+
+.main .content .banner .slider .slider-item{
+	display: block;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/*幻灯片切换显示*/
+.slider-show{
+	z-index: 1;
+}
+
+/*切换控制*/
+.main .content .banner .controls{
+	display: block;
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -40px;
+	z-index: 10;
+	background: url(../img/arrow.png) no-repeat center;
+	opacity: 0;
+	transition: .35s;
+}
+
+.main .content .banner .controls:hover{
+	background-color: rgba(0,0,0,.6);
+	opacity: 1;
+	transition: .35s;
+}
+
+.main .content .banner .prev{
+	transform: rotate(180deg);
+}
+
+.main .content .banner .next{
+	left: auto;
+	right: 0;
+}
+
+/*圆点切换控制*/
+.main .content .banner .dots{
+	position: absolute;
+	left: 45%;
+	bottom: 12px;
+	z-index: 10;
+}
+
+.main .content .banner .dots span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+}
+
+.dots-active{
+	background-color: #fff;
+}
+
+/*特别推荐*/
+.main .content .recommend >ul{
+	overflow: hidden;
+}
+
+.main .content .recommend >ul li{
+	float: left;
+	width: 33.333%;
+	padding: 15px 20px 0 20px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.main .content .recommend >ul li:nth-child(1){
+	border-left: none;
+}
+
+.main .content .recommend >ul li .pic{
+	width: 100%;
+	height: 100px;
+}
+
+.main .content .recommend >ul li .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.main .content .recommend >ul li h3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.4em;
+	padding: 8px 0;
+	overflow: hidden;
+}
+
+.main .content .recommend >ul li p{
+	height: 90px;
+	font-size: 14px;
+	color: #777;
+	overflow: hidden;
+}
+
+.main .content .recommend >ul li .read:before{
+	content: '+';
+	color: #096;
+	padding-right: 5px;
+}
+
+/*最新文章*/
+.main .content .new-ar ul li{
+	width: 100%;
+	height: 230px;
+	border-bottom: 1px solid #ada5a5;
+}
+
+.main .content .new-ar ul li .ar-caption{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.main .content .new-ar ul li .ar-pic{
+	width: 100%;
+	height: 150px;
+}
+
+.main .content .new-ar ul li .ar-pic a{
+	float: left;
+	width: 40%;
+	height: 150px;
+}
+
+.main .content .new-ar ul li .ar-pic img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.main .content .new-ar ul li .ar-pic p{
+	padding: 0 15px;
+	float: left;
+	width: 60%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.main .content .new-ar ul li .ar-info{
+	width: 100%;
+	padding: 8px 0;
+	position: relative;
+}
+
+.main .content .new-ar ul li .ar-info .tags{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.main .content .new-ar ul li .ar-info span{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.main .content .new-ar ul li .ar-info .read{
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	top: -2px;
+}
+
+/*侧边栏模块样式*/
+
+/*选项卡*/
+.main .sidebar .tabs >ul{
+	height: 45px;
+	border-bottom: 1px solid #dcd6d6;
+}
+
+.main .sidebar .tabs >ul li{
+	float: left;
+	width: 50%;
+	height: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	border-right: 1px solid #dcd6d6;
+}
+
+.main .sidebar .tabs >ul li:hover{
+	background-color: #0086B3;
+	color: #fff;
+    transition: 0.35s;
+    font-weight: bold;
+}
+
+.main .sidebar .tabs >ul li:nth-child(2){
+	border: 0;
+}
+
+/*关于我*/
+.main .sidebar .tabs .about-me{
+	height: 200px;
+}
+
+.main .sidebar .tabs .about-me h3{
+	padding: 30px 0;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.main .sidebar .tabs .about-me .me{
+	border-bottom: 1px solid #dcd6d6;
+	padding-bottom: 30px;
+}
+
+.main .sidebar .tabs .about-me .me dl{
+	padding: 0 0 0 65px;
+}
+
+.main .sidebar .tabs .about-me .icon{
+	height: 55px;
+	line-height: 55px;
+}
+
+.main .sidebar .tabs .about-me .icon ul li{
+	float: left;
+	width: 33.333%;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	border-right: 1px solid #dcd6d6;
+}
+
+.main .sidebar .tabs .about-me .icon ul li:nth-child(3){
+	border: none;
+}
+
+.main .sidebar .tabs .about-me .icon ul li a{
+	display: block;
+	height: 55px;
+	line-height: 55px;
+	transition: .35s;
+	font-size: 16px;
+}
+
+.main .sidebar .tabs .about-me .icon ul li a:hover{
+	transition: .35s;
+	font-weight: bold;
+}
+
+/*每日一句*/
+.main .sidebar .calendar-phrases .caption,
+.main .sidebar .random-ar .caption{
+	height: 50px;
+	line-height: 50px;
+	border: none;
+	color: #000;
+	text-align: center;
+	position: relative;
+}
+
+.main .sidebar .calendar-phrases .caption:before,
+.main .sidebar .random-ar .caption:before{
+	content: '';
+	width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    left: 25px;
+    bottom: 22px;
+}
+
+.main .sidebar .calendar-phrases .caption:after,
+.main .sidebar .random-ar .caption:after{
+	content: '';
+	width: 25%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 25px;
+    bottom: 22px;
+}
+
+.main .sidebar .calendar-phrases h3{
+	padding: 10px 0 0 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3399CC;
+}
+
+.main .sidebar .calendar-phrases p{
+	padding: 10px 0 0 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*随机文章*/
+.main .sidebar .random-ar ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+.main .sidebar .random-ar ul li a{
+	transition: .35s;
+}
+
+.main .sidebar .random-ar ul li a:hover{
+	color: #67B168;
+	transition: .35s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部--版权、备案信息*/
+.footer .bottom-info{
+	text-align: center;
+	padding: 14px 0;
+	color: #fff;
+}
+
+.footer .bottom-info a{
+	color: #0195df;
+	transition: .5s;
+}
+
+.footer .bottom-info a:hover{
+	transition: .5s;
+	color: #FAFAFA;
+}
